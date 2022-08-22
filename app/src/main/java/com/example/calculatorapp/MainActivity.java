@@ -38,16 +38,31 @@ public class MainActivity extends AppCompatActivity {
         // we need to label everything we put into the intent so that it can be extracted
         // when the intent is opened in the other activity
 
-        double answer;
+
+        // I learned how to use switch case to switch the screen to the answer. To do this, I also had to learn how to use the parseDouble() function to
+        // take the string input and change it into a double for the calculations.
+        double answer = 0;
         switch(v.getId()){
             //not first num make it button :)
             case R.id.addButton:
                 answer = Double.parseDouble(input1) + Double.parseDouble(input2);
                 break;
             case R.id.subtractButton:
+                answer = Double.parseDouble(input1) - Double.parseDouble(input2);
+                break;
+            case R.id.multiplyButton:
+                answer = Double.parseDouble(input1) * Double.parseDouble(input2);
+                break;
+            case R.id.divideButton:
+                answer = Double.parseDouble(input1) / Double.parseDouble(input2);
+                break;
+
 
         }
-        intent.putExtra("Answer", answer);
+
+        // I learned how to use the Double.toString to change the double answer into a string to display on the second screen.
+        String stringAnswer = Double.toString(answer);
+        intent.putExtra("Answer", stringAnswer);
         // launches the new screen and passes the information
         startActivity(intent);
 
