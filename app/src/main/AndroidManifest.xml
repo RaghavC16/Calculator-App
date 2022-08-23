@@ -14,6 +14,9 @@
         android:theme="@style/Theme.CalculatorApp"
         tools:targetApi="31">
         <activity
+            android:name=".Integral"
+            android:exported="false" />
+        <activity
             android:name=".AnswerScreen"
             android:exported="false" />
         <activity

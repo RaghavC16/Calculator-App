@@ -82,6 +82,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginBottom="40dp"
         android:text="Click here for polynomial Integral Calculator!"
+        android:onClick="switchIntegralScreens"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

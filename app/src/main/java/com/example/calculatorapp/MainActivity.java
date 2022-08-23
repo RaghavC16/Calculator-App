@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -67,6 +68,29 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void switchIntegralScreens(View v){
+        // get a reference to the EditText element in the xml page that is connected to this activity.
+        // to this activity
+        // extract the text
+
+
+        /*
+        Create an intent (envelope) by telling Android who the sender and receiver is
+        then we need to fill teh intent and lastly we need to start the intent.
+         */
+
+        Intent intent = new Intent(this, Integral.class);
+
+        startActivity(intent);
+
+    }
+
+
+
+
+
+
 
 
 
