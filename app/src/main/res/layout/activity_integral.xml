@@ -14,7 +14,7 @@
         android:layout_marginEnd="72dp"
         android:layout_marginBottom="616dp"
         android:text="Welcome to the Polynomial Integral Calculator!"
-        android:textColor="#AE9494"
+        android:textColor="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -32,10 +32,12 @@
         android:id="@+id/cof1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="400dp"
-        android:hint=""
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="396dp"
+        android:hint="-"
         android:inputType="numberDecimal"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,8 +47,24 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="236dp"
         android:layout_marginBottom="284dp"
-        android:hint=""
+        android:hint="-"
         android:inputType="numberDecimal"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <EditText
+        android:id="@+id/cof3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="284dp"
+        android:hint="-"
+        android:inputType="numberDecimal"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -54,40 +72,53 @@
         android:id="@+id/constant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="284dp"
-        android:hint=""
+        android:hint="-"
         android:inputType="numberDecimal"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/third"
+        android:id="@+id/op1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="564dp"
-        android:text="Please enter the three degree polynomial you want integrated."
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="300dp"
+        android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/second"
+        android:id="@+id/op2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="564dp"
-        android:text="Please enter the three degree polynomial you want integrated."
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="300dp"
+        android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/first"
+        android:id="@+id/op3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="564dp"
-        android:text="Please enter the three degree polynomial you want integrated."
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="296dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/computeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="168dp"
+        android:onClick="switchScreensSolution"
+        android:text="Integrate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
