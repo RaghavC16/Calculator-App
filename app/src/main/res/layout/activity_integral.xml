@@ -26,6 +26,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="564dp"
         android:text="Enter the third degree polynomial you want integrated."
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

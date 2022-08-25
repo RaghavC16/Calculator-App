@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         String input1 = editText1.getText().toString();
         String input2 = editText2.getText().toString();
 
-
-
         /*
         Create an intent (envelope) by telling Android who the sender and receiver is
         then we need to fill teh intent and lastly we need to start the intent.
@@ -34,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, AnswerScreen.class);
         // first param is the sender of the intent, which is this Activity
-        // second param is the receiver, which is SecondActivity
+        // second param is the receiver, which is AnswerScreen
 
         // we need to label everything we put into the intent so that it can be extracted
         // when the intent is opened in the other activity

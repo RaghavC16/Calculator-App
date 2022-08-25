@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/chand_pbnmi3n/OneDrive/Documents/GitHub/Calculator-App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2275" />
+        <entry key="..\:/Users/chand_pbnmi3n/OneDrive/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_answer_screen.xml" value="0.264" />
+        <entry key="..\:/Users/chand_pbnmi3n/OneDrive/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_integral.xml" value="0.264" />
+        <entry key="..\:/Users/chand_pbnmi3n/OneDrive/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_integral_solution_screen.xml" value="0.264" />
+        <entry key="..\:/Users/chand_pbnmi3n/OneDrive/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/chandrasekar1497/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_answer_screen.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/chandrasekar1497/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_integral.xml" value="0.358695652173913" />
         <entry key="..\:/Users/chandrasekar1497/Documents/GitHub/Calculator-App/app/src/main/res/layout/activity_integral_solution_screen.xml" value="0.358695652173913" />
