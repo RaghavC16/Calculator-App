@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBlue"
     tools:context=".Integral">
 
 
@@ -11,10 +12,10 @@
         android:id="@+id/welcomeAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="52dp"
         android:layout_marginBottom="616dp"
         android:text="Welcome to the Polynomial Integral Calculator!"
-        android:textColor="#8D6E63"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="564dp"
-        android:text="Please enter the three degree polynomial you want integrated."
+        android:text="Enter the third degree polynomial you want integrated."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -32,8 +33,8 @@
         android:id="@+id/cof1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
         android:hint="-"
         android:inputType="numberDecimal"
         android:minWidth="48dp"
@@ -45,8 +46,8 @@
         android:id="@+id/cof2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="236dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="500dp"
         android:hint="-"
         android:inputType="numberDecimal"
         android:minWidth="48dp"
@@ -54,13 +55,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-
     <EditText
         android:id="@+id/cof3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="408dp"
         android:hint="-"
         android:inputType="numberDecimal"
         android:minWidth="48dp"
@@ -72,8 +72,8 @@
         android:id="@+id/constant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="408dp"
         android:hint="-"
         android:inputType="numberDecimal"
         android:minWidth="48dp"
@@ -85,8 +85,8 @@
         android:id="@+id/op1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="312dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="516dp"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -95,8 +95,8 @@
         android:id="@+id/op2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="516dp"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -105,8 +105,8 @@
         android:id="@+id/op3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="420dp"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -115,10 +115,41 @@
         android:id="@+id/computeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="168dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="288dp"
         android:onClick="switchScreensSolution"
         android:text="Integrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/var1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="516dp"
+        android:text="x^3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/var2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="516dp"
+        android:text="x^2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/var3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="420dp"
+        android:text="x"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
