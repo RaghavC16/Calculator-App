@@ -22,13 +22,13 @@ public class Integral extends AppCompatActivity {
 
 
     public void switchScreensSolution(View v) {
-        // get a reference to the EditText element in the xml page that is connected to this activity.
+        // get references to the EditText elements in the xml page that is connected to this activity.
         // to this activity
         EditText editText1 = findViewById(R.id.cof1);
         EditText editText2 = findViewById(R.id.cof2);
         EditText editText3 = findViewById(R.id.cof3);
         EditText editText4 = findViewById(R.id.constant);
-        // extract the text
+        // extract the texts
         String input1 = editText1.getText().toString();
         String input2 = editText2.getText().toString();
         String input3 = editText3.getText().toString();
@@ -44,7 +44,7 @@ public class Integral extends AppCompatActivity {
 
         Intent intent = new Intent(this, IntegralSolutionScreen.class);
         // first param is the sender of the intent, which is this Activity
-        // second param is the receiver, which is SecondActivity
+        // second param is the receiver, which is IntegralSolutionScreen
 
         // we need to label everything we put into the intent so that it can be extracted
         // when the intent is opened in the other activity

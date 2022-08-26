@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 answer = Double.parseDouble(input1) / Double.parseDouble(input2);
                 break;
 
-
         }
 
         // I learned how to use the Double.toString to change the double answer into a string to display on the second screen.
@@ -68,19 +67,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void switchIntegralScreens(View v){
-        // get a reference to the EditText element in the xml page that is connected to this activity.
-        // to this activity
-        // extract the text
 
-
-        /*
-        Create an intent (envelope) by telling Android who the sender and receiver is
-        then we need to fill teh intent and lastly we need to start the intent.
-         */
 
         Intent intent = new Intent(this, Integral.class);
 
         startActivity(intent);
+        // Here I learned how to make the button switch screens without using input from an EditText like previous examples.
 
     }
 
